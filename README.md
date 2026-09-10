@@ -41,10 +41,11 @@ flowchart TD
 ## See it in action
 
 ### ✅ Ask it something real, get something useful
-![Good question example](screenshots/good-question.png)
+![Off-topic question example](screenshots/pizza-question.png)
 
 ### 🍕 Try to derail it, watch it stay professional
-![Off-topic question example](screenshots/pizza-question.png)
+![Good question example](screenshots/good-question.png)
+
 
 ### 🛠️ Behind the scenes , built live in Cloud Shell
 ![Cloud Shell development](screenshots/cloud-shell-dev.png)
