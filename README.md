@@ -17,9 +17,9 @@
 
 ## What is this?
 
-A Flask app with one job: turn Gemini 2.5 Flash into a no-nonsense Google Cloud Solutions Architect that lives in your browser. Ask it about IAM, Cloud Run, VPCs, whatever — it'll give you real, production-ready guidance. Ask it something *unrelated*, and it'll politely (but firmly) redirect you back to cloud topics. It has boundaries. Respect them.
+A Flask app with one job: turn Gemini 2.5 Flash into a no-nonsense Google Cloud Solutions Architect that lives in your browser. Ask it about IAM, Cloud Run, VPCs, whatever , it'll give you real, production-ready guidance. Ask it something *unrelated*, and it'll politely (but firmly) redirect you back to cloud topics. It has boundaries. Respect them.
 
-<!-- 🎬 Drop your own pick here — grab any gif link from https://giphy.com and paste it in:
+<!-- 🎬 Drop your own pick here , grab any gif link from https://giphy.com and paste it in:
 <div align="center"><img src="PASTE_YOUR_GIF_URL_HERE" width="400"/></div>
 -->
 
@@ -28,7 +28,7 @@ A Flask app with one job: turn Gemini 2.5 Flash into a no-nonsense Google Cloud 
 ```mermaid
 flowchart TD
     A["🌐 Client Browser"] -->|"hey, secure my Cloud Run service pls"| B["🐍 Flask + Gunicorn (Cloud Run)"]
-    B -->|"hands off the question"| C["✨ Vertex AI — Gemini 2.5 Flash"]
+    B -->|"hands off the question"| C["✨ Vertex AI , Gemini 2.5 Flash"]
     C -->|"sends back real architecture advice"| A
 
     style A fill:#e8f0fe,stroke:#4285f4,stroke-width:1.5px
@@ -46,7 +46,7 @@ flowchart TD
 ### 🍕 Try to derail it, watch it stay professional
 ![Off-topic question example](screenshots/pizza-question.png)
 
-### 🛠️ Behind the scenes — built live in Cloud Shell
+### 🛠️ Behind the scenes , built live in Cloud Shell
 ![Cloud Shell development](screenshots/cloud-shell-dev.png)
 
 ---
@@ -57,7 +57,7 @@ flowchart TD
 |---|---|
 | Backend | Flask, Gunicorn |
 | AI | Gemini 2.5 Flash via Vertex AI (`google-genai` SDK) |
-| Frontend | HTML, CSS, vanilla JS — no framework bloat |
+| Frontend | HTML, CSS, vanilla JS , no framework bloat |
 | Deployment | Docker → Artifact Registry → Cloud Run |
 | Testing | pytest |
 
