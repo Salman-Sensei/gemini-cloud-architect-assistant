@@ -4,32 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cloud Architecture AI Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<div class="container">
-<header>
-<h1>Google Cloud Architect Assistant</h1>
-<p>Powered by Gemini 2.5 Flash on Vertex AI</p>
-</header>
-<main class="card">
-<div class="form-group">
-<label for="prompt">Ask an Architectural Question:</label>
-<textarea id="prompt" placeholder="e.g., How do I secure a Cloud Run service using IAM least privilege?" rows="4"></textarea>
-</div>
-<button id="submit-btn" onclick="submitPrompt()">Generate Architecture Guidance</button>
-<div id="loading" class="hidden">
-<div class="spinner"></div>
-<span>Analyzing cloud requirements...</span>
-</div>
-<div id="response-container" class="hidden">
-<h3>Architectural Guidance:</h3>
-<div id="response-text"></div>
-</div>
-<div id="error-container" class="hidden alert-danger">
-<span id="error-text"></span>
-</div>
-</main>
+<div class="sheet">
+  <span class="tick tick-tl"></span>
+  <span class="tick tick-tr"></span>
+  <span class="tick tick-bl"></span>
+  <span class="tick tick-br"></span>
+
+  <header class="sheet-header">
+    <h1>Cloud Architect Assistant</h1>
+    <p>Ask a question. Get an answer scoped strictly to Google Cloud architecture.</p>
+  </header>
+
+  <div class="rule"></div>
+
+  <main class="sheet-body">
+    <label for="prompt">Question</label>
+    <textarea id="prompt" rows="4" placeholder="e.g. How do I secure a Cloud Run service using IAM least privilege?"></textarea>
+
+    <button id="submit-btn" onclick="submitPrompt()">Generate guidance</button>
+
+    <p id="loading" class="loading hidden">— thinking —</p>
+
+    <div id="response-container" class="response hidden">
+      <div class="response-tag">answer</div>
+      <div id="response-text"></div>
+    </div>
+
+    <div id="error-container" class="error hidden">
+      <span id="error-text"></span>
+    </div>
+  </main>
+
+  <div class="rule"></div>
+
+  <footer class="title-block">
+    <div><span>model</span>gemini-2.5-flash</div>
+    <div><span>region</span>europe-west1</div>
+    <div><span>drawn by</span>Salman-Sensei</div>
+  </footer>
 </div>
 <script src="/static/app.js"></script>
 </body>
